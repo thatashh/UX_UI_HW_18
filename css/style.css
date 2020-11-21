@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'neue_montrealregular';
+    src: url('../fonts/neuemontreal-regular-webfont.woff2') format('woff2'),
+         url('../fonts/neuemontreal-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neue_montrealmedium';
+    src: url('../fonts/neuemontreal-medium-webfont.woff2') format('woff2'),
+         url('../fonts/neuemontreal-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'neue_montreallight';
+    src: url('../fonts/neuemontreal-light-webfont.woff2') format('woff2'),
+         url('../fonts/neuemontreal-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'neue_montrealbold';
+    src: url('../fonts/neuemontreal-bold-webfont.woff2') format('woff2'),
+         url('../fonts/neuemontreal-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+ margin: 0px;
+}
+
+
+/* hero, brand content */
+
+#heroImg {
+    width: auto;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#brandStatement {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #394B50;
+}
+
+#projectsGrid {
+    display: grid;
+    margin: 0px auto;
+    margin-top: 250px;
+    grid-row-gap: 10em;
+    grid-template-rows: 1280px, 1280px, 1280px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "featured NPS"
+    "featuredAHA"
+    "featuredTravelCoin";
+
+}
+
+.hero {
+    margin-top: -245px;
+}
+
+.highlight {
+    text-align: center;
+    line-height: 116%;
+    font-family: neue_montrealbold;
+    font-size: 96px;
+    color: #49C0B5;
+}
+
+h1 {
+    text-align: center;
+    line-height: 116%;
+    font-family: neue_montrealbold;
+    font-size: 96px;
+    color: #F4D292;
+}
+
+.subhero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-top: -65px;
+    text-align: center;
+    font-family: usual;
+    font-size: 16px;
+    color: #DC8D74;
+}
+
+.projectsGridArea {
+    display: grid;
+    align-items: center;
+    padding: 25px;
+    margin: 0px auto;
+    width: 1280px;
+    height: 700px;
+    border: 1px solid #000000;
+}
+
+.scrollArrow {
+    position: relative;
+    z-index: 100;
+}
+
+.scrollArrow img {
+    position: absolute;
+    height: 150px;
+    top: -100px;
+    left: 50%;
+}
+
+
+.brand {
+    position: relative;
+    top: -100px;
+    margin: 0 auto;
+    width: 1100px;
+    height: 500px;
+    padding: 0 25px 25px 25px;
+    text-align: center;
+    font-family: neue_montrealbold;
+    font-size: 24px;
+    line-height: 220%;
+    letter-spacing: .5px;
+    color: #FFF6E8; 
+    
+}
+
+.brand h2 {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+    font-family: neue_montrealbold;
+    font-size: 56px;
+    color: #DC8D74;
+    
+}
+
+.brandCTA {
+    display: inline;
+    background-color: transparent;
+    border: transparent;
+    left: 35%;
+    width: auto;
+    height: 100px;
+    padding-top: 2%;
+    font-family: neue_montrealbold;
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: #F4D292;
+}
+
+.brandCTA img, .footerCTA img {
+    width: 150px;
+    padding-right: 60px;
+}
+/* footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 600px;
+    background-color: #394B50;
+    margin-top: 250px;
+}
+
+#footerGrid {
+    display: grid;
+    margin: 0 auto;
+    position: absolute;
+    top: 60px;
+    max-width: 1000px;
+    grid-column-gap: 10em;
+    grid-template-rows: 75% 75%;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "GetinTouch footerConnect"
+    "left"
+    "copyright";
+}
+
+
+.GetInTouch {
+    display: block;
+    font-family: neue_montrealbold;
+    font-size: 56px;
+    color: #DC8D74;
+}
+
+
+.footerConnect {
+    display: block;
+    padding-top: 15px;
+    font-family: neue_montrealbold;
+    font-size: 32px;
+    color: #D3A5A0;
+    
+}
+
+#left p {
+    font-family: usual;
+    line-height: 197%;
+    font-size: 16px;
+    color: #FFF6E8;
+   
+}
+#right {
+    padding: 25px;
+    max-width: 200px;
+    height: 100%;
+}
+
+#left {
+    padding: 25px;
+}
+
+#copyright {
+    position: relative;
+    top: 160px;
+}
+
+#footerLinks {
+    line-height: 35px;
+    padding-top: 10px;
+}
+
+#footerLinks a {
+    display: block;
+    font-family: usual;
+    text-decoration: none;
+    color: #FFF6E8;
+}
+
+
+.upArrow {
+    display: inline-block;
+    padding-right: 80px;
+    width: 100%;
+    position: relative;
+    bottom: 325px;
+}
+
+.upArrow img {
+    float: right;
+    height: 150px;   
+}
+
+button.footerCTA {
+    display: inline-block;
+    background-color: transparent;
+    border: transparent;
+    width: auto;
+    font-family: neue_montrealbold;
+    font-size: 24px;
+    color: #F4D292;
+}
+

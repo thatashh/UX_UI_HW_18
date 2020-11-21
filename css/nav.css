@@ -1,0 +1,55 @@
+#navigation {
+    display: inline-block;
+    width: 100%;
+    height: 90px;
+
+}
+
+.inline-block img {
+    float: left;
+    padding: 35px;
+    width: 95px;
+
+}
+
+#hamburger {
+    float: right;
+    padding-right: 35px;
+    padding-top: 35px;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */ 
+    z-index: 1; /* Stay on top */
+    right: 0;
+    background-color: #394B50;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 170px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  .sidenav a {
+    padding-left: 100px;
+    text-decoration: none;
+    line-height: 210%;
+    font-family: neue_montrealbold;
+    font-size: 96px;
+    color: #FFF6E8;
+    display: block;
+    transition: 0.3s;
+    border: 1px solid #000000
+    
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin-right:20px;
+  }
