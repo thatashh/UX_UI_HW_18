@@ -11,6 +11,7 @@
     src: url('../fonts/neuemontreal-medium-webfont.woff2') format('woff2'),
          url('../fonts/neuemontreal-medium-webfont.woff') format('woff');
     font-weight: normal;
+    font-weight: 100 200 300 400 500 600 700 800 900;
     font-style: normal;
 
 }
@@ -29,6 +30,7 @@
     src: url('../fonts/neuemontreal-bold-webfont.woff2') format('woff2'),
          url('../fonts/neuemontreal-bold-webfont.woff') format('woff');
     font-weight: normal;
+    font-weight: 100 200 300 400 500 600 700 800 900;
     font-style: normal;
 
 }
@@ -56,20 +58,6 @@ body {
     width: 100%;
     height: 100vh;
     background-color: #394B50;
-}
-
-#projectsGrid {
-    display: grid;
-    margin: 0px auto;
-    margin-top: 250px;
-    grid-row-gap: 10em;
-    grid-template-rows: 1280px, 1280px, 1280px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "featured NPS"
-    "featuredAHA"
-    "featuredTravelCoin";
-
 }
 
 .hero {
@@ -104,16 +92,6 @@ h1 {
     color: #DC8D74;
 }
 
-.projectsGridArea {
-    display: grid;
-    align-items: center;
-    padding: 25px;
-    margin: 0px auto;
-    width: 1280px;
-    height: 700px;
-    border: 1px solid #000000;
-}
-
 .scrollArrow {
     position: relative;
     z-index: 100;
@@ -136,42 +114,360 @@ h1 {
     padding: 0 25px 25px 25px;
     text-align: center;
     font-family: neue_montrealbold;
+    font-weight: 200;
     font-size: 24px;
     line-height: 220%;
     letter-spacing: .5px;
     color: #FFF6E8; 
-    
 }
 
 .brand h2 {
     display: flex;
     justify-content: center;
-    padding: 25px;
+    padding: 25 25px 0px 25px;
     text-align: center;
     font-family: neue_montrealbold;
     font-size: 56px;
-    color: #DC8D74;
-    
+    color: #DC8D74;  
 }
 
 .brandCTA {
     display: inline;
     background-color: transparent;
     border: transparent;
-    left: 35%;
     width: auto;
     height: 100px;
-    padding-top: 2%;
     font-family: neue_montrealbold;
     font-size: 16px;
     letter-spacing: 5px;
+    text-decoration: none;
     color: #F4D292;
 }
 
+
 .brandCTA img, .footerCTA img {
-    width: 150px;
-    padding-right: 60px;
+    width: 140px;
+    padding-right: 50px;
 }
+
+/* Works */
+
+#projectsGrid {
+    padding: 100px 10%;
+    display: grid;
+    row-gap: 5em;
+    margin-bottom: 1200px;
+    grid-template-rows: 7% 47% 47% 47%;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "projectTabs"
+    "featuredNPS"
+    "featuredAHA"
+    "featuredTravelCoin"    
+}
+
+#projectTabs {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    font-family: neue_montrealbold;
+    font-weight: 100px;
+    font-size: 20px;
+    letter-spacing: .5px;
+    width: 500px;
+}
+
+h3.uxui-tab {
+    color: #DC8D74;
+    border-bottom: 4px solid #394B50;
+    padding-bottom: 5px;
+}
+
+h3.graphic-tab {
+    padding-left: 10%;
+    color: #49C0B5;
+    padding-bottom: 12px;
+}
+
+.projectsGridArea {
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#featuredNPS {
+    grid-area: featuredNPS;
+    background-image: url("../images/mockups/Homepage_NPSMockup.png");    
+}
+
+#featuredAHA {
+    grid-area: featuredAHA;
+    background-image: url("../images/mockups/AHA_Mockup.png");
+}
+
+#featuredTravelCoin {
+    grid-area: featuredTravelCoin;
+    background-image: url("../images/mockups/TravelCoin_Mockup.png");
+}
+
+div.NPS, div.TravelCoin, div.AHA {
+    display: block;
+    position: relative;
+    width: 40%;
+    height: 400px;
+    padding: 0 0 0 7%;
+} 
+
+div.NPS {
+    top: 180px;
+}
+
+div.TravelCoin {
+    top: 200px;
+}
+
+div.AHA {
+    top: 190px;
+    float: right;
+
+}
+
+.AHA h2, .NPS p, .AHA p{
+    color: #394B50;
+}
+
+.NPS h2 {
+    color: #DC8D74;
+}
+
+.TravelCoin h2, button.TCbutton {
+    color: #F4D292;
+}
+
+.TravelCoin p {
+    color: #FFF6E8;
+}
+
+#projectsGrid h2 {
+    font-family: neue_montrealbold;
+    font-size: 56px;
+    line-height: 116%;
+    font-weight: 200;
+}
+
+#projectsGrid p {
+    display: block;
+    position: relative;
+    top: -20px;
+    width: 80%;
+    font-family: usual;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2%;
+    line-height: 187%; 
+}
+
+.NPSbutton, .TCbutton, .AHAbutton {
+    display: inline-block;
+    position: relative;
+    left: -2%;
+    background-color: transparent;
+    border: transparent;
+    width: auto;
+    font-family: neue_montrealbold;
+    font-size: 16px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.AHAbutton {
+    color: #FFF6E8;
+}
+
+.NPSbutton, .TCbutton {
+    color: #394B50;
+}
+
+.NPSbutton img, .TCbutton img, .AHAbutton img {
+    width: 145px;
+    padding-right: 40px;
+    padding-left: 2px;
+}
+
+/* About + Skills */
+
+#aboutMe {
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    padding-left: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutHero h1 {
+    font-family: neue_montrealbold;
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: .5px;
+    line-height: 168%;
+    color: #394B50;
+}
+
+span.highlight1 {
+    color: #49C0B5;
+}
+
+span.highlight2 {
+    color: #F4D292;
+}
+
+
+#aboutMe2 {
+    padding: 100px 10%;
+    display: grid;
+    column-gap: 5em;
+    row-gap: 7em;
+    grid-template-rows: 40% 50%;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: 
+    "profilePhoto profileContent"
+    "familyContent familyPhoto";
+}
+
+#profileContent h2 {
+    font-family: neue_montrealbold;
+    font-weight: 300;
+    font-size: 56px;
+    margin-bottom: 5px;
+    color: #DC8D74;
+}
+
+.aboutmeGridArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#familyContent img {
+    padding-bottom: 120px;
+}
+
+#profileContent p, #familyContent p{
+    font-family: usual;
+    font-size: 16px;
+    color: #394B50;
+    line-height: 190%;
+    margin-bottom: 0;
+}
+
+#profileContent img {
+    position: relative;
+    right: 140px;
+    top: 80px;
+    width: 120px;
+}
+
+#profilePhoto img, #familyContent img, #familyPhoto img {
+    width: 100%;
+}
+
+#profilePhoto {
+    grid-area: profilePhoto;
+}
+
+#profileContent {
+    grid-area: profileContent;
+    
+}
+
+#familyContent {
+    grid-area: familyContent;
+}
+
+#familyPhoto {
+    grid-area: familyPhoto;
+}
+
+/* Experience + Skills */
+
+
+#expSkills {
+    padding: 100px 10%;
+    display: grid;
+    column-gap: 5em;
+    row-gap: 5em;
+    grid-template-rows: 40% 40%;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "experience Skills"
+    "experience Skills";
+}
+
+#expSkills a {
+    position: relative;
+    font-family: neue_montrealbold;
+    font-size: 24px;
+    width: 88px;
+    color: #DC8D74;
+    bottom: 165px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-bottom: 4px solid #394B50;
+}
+
+#expSkills h2, #expSkills h3 {
+    font-family: neue_montrealbold;
+    font-weight: 100;
+}
+
+#expSkills h2 {
+    color: #DC8D74;
+    font-size: 32px;
+    margin: 0;
+}
+
+#expSkills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#experience h3 {
+    color: #49C0B5;
+    letter-spacing: .5px;
+    line-height: 100%;
+    font-size: 24px;
+}
+
+#experience p, #Skills li {
+    font-family: usual;
+    color: #394B50;
+}
+
+#experience p {
+    line-height: 180%;
+}
+
+#Skills li {
+    line-height: 220%;
+}
+
+#experience {
+    grid-area: experience;
+}
+
+#Skills {
+    grid-area: Skills;
+}
+
+#Tech {
+    grid-area: Tech;
+}
+
 /* footer */
 
 footer {
@@ -179,9 +475,9 @@ footer {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-top: auto;
     height: 600px;
     background-color: #394B50;
-    margin-top: 250px;
 }
 
 #footerGrid {
@@ -189,7 +485,7 @@ footer {
     margin: 0 auto;
     position: absolute;
     top: 60px;
-    max-width: 1000px;
+    max-width: 1200px;
     grid-column-gap: 10em;
     grid-template-rows: 75% 75%;
     grid-template-columns: 60% 40%;
@@ -270,8 +566,106 @@ button.footerCTA {
     background-color: transparent;
     border: transparent;
     width: auto;
+    margin: 0;
+    padding: 0;
+    padding-top: 18px;
     font-family: neue_montrealbold;
     font-size: 24px;
+    cursor: pointer;
     color: #F4D292;
 }
 
+@media only screen and (max-width: 1000px) {
+    
+#projectsGrid {
+    padding: 50px 8%;
+    margin-bottom: 1000px;
+    grid-template-rows: 5% 40% 40% 40%;  
+    grid-template-columns: 5fr;
+    grid-template-areas: 
+    "projectTabs"
+    "featuredNPS"
+    "featuredAHA"
+    "featuredTravelCoin";
+}
+
+#projectsGridArea {
+    background-image: no-repeat;
+    background-position: center;
+    background-size: 20%;   
+}
+
+#projectsGrid h2 {
+    font-size: 40px;
+    line-height: 116%;
+}
+
+#projectsGrid p {
+    font-size: 14px;
+    top: 8px;
+    width: auto;
+}
+
+#featuredNPS, #featuredAHA, #featuredTravelCoin {
+    margin-bottom: 300px; 
+}
+
+div.NPS, div.TravelCoin, div.AHA {
+    position: relative;
+    width: auto;
+    top: 720px;
+    float: left;
+    padding-left: 0;
+}
+
+
+#featuredNPS button, #featuredAHA button, #featuredTravelCoin button {
+    margin-left: 1%;
+    margin-top: 50px;
+}
+
+#featuredAHA button {
+    color: #F4D292;
+}
+
+#featuredTravelCoin p {
+    color: #394B50;
+}
+
+#featuredTravelCoin h2, #featuredTravelCoin button {
+    color: #8886B9;
+}
+
+#aboutMe2 {
+    padding: 50px 8%;
+    display: grid;
+    column-gap: 5em;
+    row-gap: 2em;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 2fr;
+    grid-template-areas: 
+    "profilePhoto" 
+    "profileContent"
+    "familyContent"
+    "familyPhoto";
+}
+
+#expSkills {
+    padding: 50px 8%;
+    display: grid;
+    column-gap: 3em;
+    row-gap: 1em;
+    margin: 200px 0px;
+    grid-template-rows: 60% 40%;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "experience"
+    "Skills Skills";
+}
+
+#expSkills a {
+    position: relative;
+    margin-top: 80px;
+}
+
+}

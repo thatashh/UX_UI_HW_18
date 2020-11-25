@@ -10,29 +10,31 @@
        <header id="navigation">
            <div class="inline-block" class="logo">
            <a href="index.html">   
-           <img src="images/AM-logo.png">
+           <p>that<span>ash</span></p>
            </a>
            </div>  
-           <!-- Change the icon for the close button! -->
            <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Works</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/close-button.svg" alt="closebutton"></a>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About</a>
+            <a href="#projectsGrid">Works</a>
             <a href="#">Connect</a>
+           </br>
+            <a class="sidebarBottom" href="https://www.linkedin.com/in/ashleymosqueda/" target="_blank">LinkedIn</a>
+            <a class="sidebarBottom" href="https://www.facebook.com/ash.mosqueda.7/" target="_blank">Facebook</a>
+            <a class="sidebarBottom"href="https://www.instagram.com/that.ashh/" target="_blank">Instagram</a>
+      
           </div>
          
           <span id="hamburger" onclick="openNav()">
             <svg x="0px" y="0px"
             viewBox="0 0 326 178" height="17" width="32">
          <style type="text/css">
-            .st0{fill:#638596;}
+            .st0{fill:#49C0B5;}
          </style>
             <path class="st0" d="M312.5,26.9H13.7c-7.2,0-13-5.8-13-13s5.8-13,13-13h298.8c7.2,0,13,5.8,13,13S319.7,26.9,312.5,26.9z"/>
              <path class="st0" d="M312.5,177.2H13.7c-7.2,0-13-5.8-13-13s5.8-13,13-13h298.8c7.2,0,13,5.8,13,13S319.7,177.2,312.5,177.2z"/>
          </svg></span>
-         
-      
        </header>   
 
       <section id="heroImg">
@@ -54,24 +56,51 @@
                To her, creating unique experiences starts with understanding the heart</br>
                of an idea or goal from start to finish, truly keeping in mind the needs of the audience.
             </p>
-            <button class="brandCTA">
+            <a class="brandCTA" href="aboutme.html">
                <img src="images/CTA-Button.png">
                GET TO KNOW ME
-            </button>
+            </a>
             </div>
-   
             </div>
       </section>
+      <!--Grid Work-->
       <section id="projectsGrid">
+         <div id="projectTabs">
+         <h3 class="uxui-tab">UX/UI</h3>
+         <h3 class="graphic-tab">GRAPHIC + MOTION</h3>
+      </div>
          <div id="featuredNPS" class="projectsGridArea">
-            <div class="NPS">NPS</div>
+            <div class="NPS">
+               <h2>National Parks</br>Service Redesign</h2>
+               <p>With collaborative research, a redesign was made to improve the usability and ease of navigation for the NPS.gov website.
+               </p>
+               <button class="NPSbutton">
+                  <img src="images/CTA-Button.png">
+                  VIEW CASE STUDY
+               </button>
+            </div>
             </div>
          <div id="featuredAHA" class="projectsGridArea">
-            <div class="AHA">AHA</div>
+            <div class="AHA">
+               <h2>AHA!</br>Vocabulary</h2>
+               <p>As a team, we put our heads together to create an
+                  app that promotes growth through gamification of the English language.</p>
+                  <button class="AHAbutton">
+                     <img src="images/AHA-Button.svg">
+                     VIEW CASE STUDY
+                  </button>
+               </div>
             </div>
          <div id="featuredTravelCoin" class="projectsGridArea">
-           <div class="TravelCoin">TravelCoin</div>
-         </div>  
+           <div class="TravelCoin">
+              <h2>TravelCoin</h2>
+              <p>A collective effort in gathering data led to the design of the ultimate travel budgeting app.</p>
+              <button class="TCbutton">
+               <img src="images/TC-Button.svg">
+               VIEW CASE STUDY
+            </button>
+            </div>
+            </div>  
       </section>
       <footer>
          <section id="footerGrid">
@@ -83,19 +112,18 @@
                   ashmos17@gmail.com
                </button>
                <p id="copyright">© 2020 Ashley Mosqueda</p>
-   
             </div>
             <div id="right" class="footerGridArea">
                <div class="footerConnect">Connect</div></br></br>
                <div id="footerLinks">  
-               <a class="linkedin" href="https://www.linkedin.com/in/ashleymosqueda/" target="_blank">LinkedIn</a>
-               <a class="facebook" href="https://www.facebook.com/ash.mosqueda.7/" target="_blank">Facebook</a>
-               <a class="instagram" href="https://www.instagram.com/that.ashh/" target="_blank">Instagram</a>
+               <a href="https://www.linkedin.com/in/ashleymosqueda/" target="_blank">LinkedIn</a>
+               <a href="https://www.facebook.com/ash.mosqueda.7/" target="_blank">Facebook</a>
+               <a href="https://www.instagram.com/that.ashh/" target="_blank">Instagram</a>
              </div>   
             </div>   
          </section>
             <div class="upArrow">
-               <img src="images/Up-Arrow.png">
+               <a href="index.html"><img src="images/Up-Arrow.png"></a>
             </div>
       </footer>
       <script src="js/index.js"></script>

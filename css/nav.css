@@ -2,54 +2,73 @@
     display: inline-block;
     width: 100%;
     height: 90px;
-
+    
 }
 
-.inline-block img {
+.inline-block p {
     float: left;
-    padding: 35px;
-    width: 95px;
+    font-family: neue_montrealbold;
+    padding: 10px 0px 0px 55px;
+    color: #394B50;
+    font-size: 25px;
+    font-weight: 200;
+}
 
+.inline-block span {
+    color: #49C0B5;
+    font-weight: 200;
 }
 
 #hamburger {
-    float: right;
-    padding-right: 35px;
-    padding-top: 35px;
+    position: fixed;
+    right: 0px;
+    padding-right: 55px;
+    padding-top: 45px;
 }
 
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */ 
-    z-index: 1; /* Stay on top */
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
     right: 0;
     background-color: #394B50;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 170px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    overflow-x: hidden; 
+    padding-top: 200px; 
+    transition: 0.5s;
   }
   
-  .sidenav a {
+.sidenav a {
     padding-left: 100px;
+    margin-top: 5px;
     text-decoration: none;
-    line-height: 210%;
+    line-height: 116%;
     font-family: neue_montrealbold;
     font-size: 96px;
     color: #FFF6E8;
     display: block;
     transition: 0.3s;
-    border: 1px solid #000000
-    
+}
+
+.sidenav a:hover {
+    color: #F4D292;
   }
 
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
+#mySidenav a.sidebarBottom {
+    display: inline-block;
+    font-family: usual;
+    margin-left: 0%;
+    width: 30px;
+    margin-top: 7%;
+    font-size: 16px;
+    color: #49C0B5;
+}
 
-  .sidenav .closebtn {
+.sidenav .closebtn img{
     position: absolute;
-    top: 20px;
-    right: 20px;
-    margin-right:20px;
-  }
+    top: 35px;
+    right: 35px;
+    margin-right: 20px;
+    width: 30px;
+}
+
